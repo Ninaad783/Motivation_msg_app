@@ -1,0 +1,37 @@
+<html>
+    <head>
+            <title>motivation tracker app</title>
+            <style>
+                *{font-family: Arial; font-size: 40px;}
+                    body{background-color: azure;}
+                    .btn{width:30%; border-radius:30px;}
+            </style>
+
+            <script>
+                
+                    function getmsg()
+                    {
+                        event.preventDefault();
+                        let ans=document.getElementById("ans");
+                        let message=["live and let live ", "just do it ", "i can do it"];
+                        let r=parseInt(Math.random()* message.length);
+                        ans.innerHTML=message[r];
+                    }
+                    </script>
+
+                       
+
+                    </head>
+    </head>
+    <body>
+        <center>
+            <h1>motivation vala</h1>
+            <form onsubmit="getmsg()">
+               
+                <input type="submit" value="Get Msg" class="btn"/>
+            </form>
+            <h2 id="ans"/>
+           
+        </center>
+    </body>
+</html>
